@@ -90,12 +90,12 @@ bot.on('message', function (user, userID, channelID, message, evt) {
                 });
             break;
 
-            case 'keller':
+            case 'gimp':
                 var UserID = args[1].slice(2, -1);
                 var textChannels = Object.values(bot.servers[ServerID].channels).filter(c => c.type == 0);
                 bot.sendMessage({
                     to: channelID,
-                    message: (args[1]) + " has become Helen Keller."
+                    message: (args[1]) + " has been Deafened and Muted."
                 });
                 bot.deafen({
                     serverID: ServerID,
@@ -108,12 +108,12 @@ bot.on('message', function (user, userID, channelID, message, evt) {
                 //bot.editChannelPermissions({}); add code to remove ability to read chat once library is updated
             break;
 
-            case 'unkeller':
+            case 'ungimp':
                 var UserID = args[1].slice(2, -1);
                 //var textChannels = Object.values(bot.servers[serverID].channels).filter(c => c.type == 2)
                 bot.sendMessage({
                     to: channelID,
-                    message: (args[1]) + " is no longer Helen Keller."
+                    message: (args[1]) + " is no longer Deafened and Muted."
                 });
                 bot.undeafen({
                     serverID: ServerID,
