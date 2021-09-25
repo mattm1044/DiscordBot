@@ -1,9 +1,9 @@
 {
-	"name": "greeter-bot",
+	"name": "THE-BOT",
 	"version": "1.0.0",
-	"description": "My First Discord Bot",
+	"description": "Simple chat bot for personal use",
 	"main": "bot.js",
-	"author": "Your Name",
+	"author": "Matt Marini",
 	"dependencies": {
 		"discord.io": "https://github.com/woor/discord.io/tarball/gateway_v6",
 		"discord.js": "^11.5.1",
